@@ -71,7 +71,11 @@ public class XMLRetriever {
 	}
 
 	public static void main(String[] args) {
-		retrieveData(args[0], args[1], args[2], args[3]);
+		if(args.length == 4) {
+			retrieveData(args[0], args[1], args[2], args[3]);
+		} else {
+			System.out.println("There are too much or too few arguments");
+		}
 	}
 
 }
